@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dr. Hughes AI Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #2a3f54;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      flex-grow: 1;
+      flex: 1;  /* ← this is the key to push footer down */
+    }
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 16px;
+      width: 240px;
+      height: 220px;     /* ← controls vertical size (height) */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #2c3e50;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      margin: 5px 0;
+      background-color: rgba(0, 0, 0, 0.05);
+      color: #2c3e50;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 13px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .btn:hover {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .blue-gradient {
+      background: linear-gradient(to bottom right, #e0f0ff, #b2d7ff);
+    }
+
+    .green-gradient {
+      background: linear-gradient(to bottom right, #e8fdf5, #c6f7dd);
+    }
+
+    .peach-gradient {
+      background: linear-gradient(to bottom right, #fff3e6, #ffe0cc);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 1px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    footer img {
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+
+    /* Avatar + header for Chad card */
+    .card .app-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card .app-header img.avatar {
+      width: 40px;    /* adjust size here */
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .card .app-header span.title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2a3f54;
+    }
+
+    /* Avatar + header for Social Posts card */
+    .card .app-header-social {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card .app-header-social img.avatar {
+      width: 40px;   /* match Chad */
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .card .app-header-social span.title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2a3f54;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dr. Hughes AI Portal</h1>
+
+  <div class="container">
+    <!-- Chad (NeuroBot) Card -->
+    <div class="card blue-gradient">
+      <div class="app-header">
+         <img class="avatar" src="/static/chad_avatar.png" alt="Chad avatar">
+         <span class="title">Chad</span>
+      </div>
+
+      <a class="btn" href="https://neurobot-p6gg.onrender.com" target="_blank">Open Chatbot</a>
+      <a class="btn" href="https://neurobot-p6gg.onrender.com/admin/dashboard" target="_blank">Admin Dashboard</a>
+      <a class="btn" href="https://neurobot-p6gg.onrender.com/admin/feedback" target="_blank">Feedback Review</a>
+      <a class="btn" href="https://neurobot-p6gg.onrender.com/admin/clear_db" target="_blank">Clear DB</a>
+    </div>
+
+    <!-- Social Posts Card -->
+    <div class="card green-gradient">
+      <div class="app-header-social">
+        <img class="avatar" src="/static/social_avatar.png" alt="Social Posts avatar">
+        <span class="title">Social Posts</span>
+      </div>
+      <a class="btn" href="/social_posts" target="_blank">Open Social Tool</a>
+      <a class="btn" href="/social_posts/review" target="_blank">Review Summaries</a>
+    </div>
+
+    <!-- Book Publisher Card -->
+    <div class="card peach-gradient">
+      <h2>📚 Book Publisher</h2>
+      <a class="btn" href="/book_publisher" target="_blank">Open Publisher</a>
+      <a class="btn" href="/book_publisher/outline" target="_blank">Generate Outline</a>
+    </div>
+  </div>
+
+  <footer>
+      <span>Powered by <strong>Xgentico AI</strong></span>
+      <img src="/static/xgentico_logo.png" alt="Xgentico Logo" class="h-5">
+  </footer>
+
+</body>
+</html>

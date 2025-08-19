@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirm Wipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .confirm-box {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #c00;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .confirm {
+            background-color: #c00;
+            color: white;
+        }
+
+        .cancel {
+            background-color: #ccc;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirm-box">
+        <h2>Are you sure you want to delete all data?</h2>
+        <p>This will permanently delete all messages and feedback from the database.</p>
+        <a href="/wipe-db" class="button confirm">Yes, wipe everything</a>
+        <a href="/" class="button cancel">Cancel</a>
+    </div>
+</body>
+</html>

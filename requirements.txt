@@ -1,0 +1,8 @@
+flask
+openai>=1.0.0
+qdrant-client
+sqlalchemy
+psycopg2-binary
+python-dotenv
+beautifulsoup4
+requests

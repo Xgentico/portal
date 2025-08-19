@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xgentico Portal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 960px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            width: 280px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .card a {
+            display: block;
+            margin-bottom: 10px;
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .danger {
+            color: #c00;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Xgentico Admin Portal</h1>
+        <div class="card-grid">
+            <div class="card">
+                <h2>Chad (NeuronBot)</h2>
+                <a href="https://neurobot-p6gg.onrender.com" target="_blank">🔵 Launch Chatbot</a>
+                <a href="https://neurobot-p6gg.onrender.com/feedback" target="_blank">📋 Admin Feedback</a>
+                <a href="https://neurobot-p6gg.onrender.com/dashboard" target="_blank">📊 Dashboard</a>
+                <a href="/confirm-wipe" class="danger">🧨 Empty Database</a>
+            </div>
+            <div class="card">
+                <h2>Social Amplifier</h2>
+                <p>Coming soon...</p>
+            </div>
+            <div class="card">
+                <h2>Book Promoter</h2>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
