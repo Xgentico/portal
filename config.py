@@ -23,10 +23,10 @@ DB_SSLMODE        = os.getenv("DB_SSLMODE", "require")  # Render-friendly
 
 # SQLAlchemy DSN (psycopg2 driver explicit)
 SQLALCHEMY_DATABASE_URI = (
-    f"postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}"
-    f"@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
-    f"?sslmode={DB_SSLMODE}"
-)
+     f"postgresql+psycopg://{POSTGRES_USER}:{POSTGRES_PASSWORD}"
+     f"@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
+     f"?sslmode={DB_SSLMODE}"
+ )
 
 # Qdrant
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
